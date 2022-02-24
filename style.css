@@ -2,12 +2,14 @@
 --primary: #84019e;
 --primary-lighten: #9f00be;
 --secondary: #e908b8;
+--secondary-lighten: #ff01c8;
+--primary-gradient: linear-gradient(90deg, rgba(58,1,67,1) 55%, rgba(203,1,250,1) 71%);
 }
 
 
 .diagonal-split-background{
   background-color: #f1f1f1;
-  background-image: -webkit-linear-gradient(52deg, #ffffff 30%, #84019e 50%);
+  background-image: -webkit-linear-gradient(52deg, #ffffff 30%, var(--primary-gradient) 50%);
 }
 
 .horizontal-split-background{
@@ -21,4 +23,40 @@
 
 .card-pictures{
   max-width: 50%;
+}
+
+.trial{
+  background: linear-gradient(to left bottom, var(--primary) 50%, white 50%);
+}
+
+.img-shadow{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); 
+
+}
+
+.primary-color{
+  background-color: var(--primary);
+}
+
+.btn-primary{
+  background-color: var(--primary);
+  border-color: var(--primary-lighten);
+}
+.btn-primary:hover{
+  background-color: var(--secondary);
+  border-color: var(--secondary-lighten);
+}
+
+.text-grey{
+  color: rgb(158, 158, 158);
+}
+
+.line-runner{
+  background-color: var(--primary);
+  min-height: 4px;
+}
+
+.background-gradient{
+  background-color: var(--primary-gradient);
 }
